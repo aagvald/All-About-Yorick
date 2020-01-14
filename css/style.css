@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=El+Messiri&display=swap');
+
+body{
+    margin: 0px;
+    background-color: black;
+    font-family: 'El Messiri';
+}
+header{
+  background-image: url("./../img/Yorick.jpg");
+  background-size: cover;
+  background-position: left;
+}
+section{
+  background-image: url("./../img/Shadow Isles Theme.jpg");
+  background-size: cover;
+  background-position: center;
+}
+article{
+  background-image: url("./../img/Arclight Yorick Theme.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+.navigation{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 250px 250px;
+}
+.nav-buttons{
+  height: 40px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border: 5px solid white;
+  border-radius: 40px;
+  padding: 70px 0px;
+  margin: 30px;
+  transition: .8s;
+}
+.nav-buttons:hover{
+  transform: scale(1.05);
+  background-color: rgb(28,65,81);
+}
+
+
+.h1{
+  font-size: 100px;
+  text-align: center;
+  color: white;
+}
+.h2{
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+.paragraph{
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+.h2.h2-tight{
+  margin: 17px;
+}
+.paragraph.paragraph-tight{
+  margin: 11px;
+}
+.textaligner{
+  width: 80vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 10vh;
+}
