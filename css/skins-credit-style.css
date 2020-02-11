@@ -1,31 +1,29 @@
+/* Font som jag har importerat för sidan*/
+
 @import url('https://fonts.googleapis.com/css?family=El+Messiri&display=swap');
+
+button:focus {outline:0;}
 
 body{
     margin: 0px;
     background-color: black;
     font-family: 'El Messiri';
+}
 
 /* De olika delarnas generella utseenden, exempelvis har toppen av sidan bakgrundsbilden från "Header" och bakgrunden på "section" ska vara svart. */
 
-}
 header{
-  background-image: url("./../img/Yorick.jpg");
+  background-image: url("./../img/Yorick-skins-credit.jpg");
   background-size: cover;
   background-position: left;
 }
 section{
-  background-image: url("./../img/Shadow Isles Theme.jpg");
-  background-size: cover;
-  background-position: center;
-}
-article{
-  background-image: url("./../img/Arclight Yorick Theme.jpg");
+  background-color: black;
   background-size: cover;
   background-position: center;
 }
 
 /* Denna css bestämmer hur länkarna till de olika sidorna ska agera och se ut, här har jag sagt att knapparna ska förstoras och bli blå när man håller musen över dem. Lite längre ned bestämmer den även hur Javascript-knapparna ska se ut. */
-
 
 .navigation{
   display: grid;
@@ -49,7 +47,23 @@ article{
   background-color: rgb(28,65,81);
 }
 
-/* Dessa är de mer generella css koderna som förekommer flera gånger (Exempelvis storlek på text kan vara bra att ha samma på flera ställen på sidan). */
+/* Här är style på knapparna som gör att man bläddrar mellan bilderna.*/
+
+.changePic{
+  height: 35px;
+  width: 100%;
+  background-color: white;
+  border: none;
+  margin: auto;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+}
+.changePic:hover{
+  background-color: rgb(28,65,81)
+}
+
+/* Dessa är de mer generella css koderna för text-specifiering som förekommer flera gånger (Exempelvis storlek på text kan vara bra att ha samma på flera ställen på sidan). */
 
 .h1{
   font-size: 100px;
@@ -73,8 +87,18 @@ article{
   margin: 11px;
 }
 .textaligner{
-  width: 80vw;
-  padding-left: 10vw;
-  padding-right: 10vw;
-  padding-bottom: 10vh;
+width: 80vw;
+padding-left: 10vw;
+padding-right: 10vw;
+padding-bottom: 10vh;
+}
+
+/* Style för bilderna som jag har lagt in på sidan och som man kan bläddra mellan.*/
+
+.skins{
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  width: 33vw;
+  height: 33vw;
 }

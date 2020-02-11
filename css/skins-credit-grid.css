@@ -1,10 +1,23 @@
-/* Här bestämmer jag att alla de olika delarna ska vara så stora att allt innehåll som jag lagt in får plats i dem (Alltså 500px på den första raden och "Auto" på de andra).*/
+/* Här bestämmer jag att alla de två delarna där jag använder en grid. Den ena ska vara 500px resten "Auto" precis som på huvudsidan, Detta för att man ska veta att man är på samma webbplats men att det finns olika kategorier.*/
 
 .container{
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 500px auto auto auto auto;
+  grid-template-rows: 500px auto auto;
   grid-gap: 0px;
+}
+
+/* Det här är delen av sidan där jag har några skins som man kan bläddra mellan genom knappar i javascript och här har jag specifierat lite hur layout på den delen ska vara.*/
+
+#skincontainer{
+  display: grid;
+  grid-template-columns: 14vw auto 14vw;
+  grid-template-rows: 100%;
+  height: auto;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
 }
 
 /* Horisontellt ska alla rader ta upp hela skärmen.*/
@@ -16,9 +29,6 @@ nav{
   grid-column: 1/-1;
 }
 section{
-  grid-column: 1/-1;
-}
-article{
   grid-column: 1/-1;
 }
 footer{
