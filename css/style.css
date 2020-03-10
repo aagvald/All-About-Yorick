@@ -57,6 +57,11 @@ article{
   color: white;
 }
 .h2{
+  font-size: 100px;
+  text-align: center;
+  color: white;
+}
+.h3{
   font-size: 40px;
   text-align: center;
   color: white;
@@ -66,7 +71,7 @@ article{
   text-align: center;
   color: white;
 }
-.h2.h2-tight{
+.h3.h3-tight{
   margin: 17px;
 }
 .paragraph.paragraph-tight{
